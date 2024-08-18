@@ -264,7 +264,7 @@ function displaySidebarOptions($role) {
   <div class="sidebar">
     <div class="logo">
       <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
-      <span class="com">nirav Job portal</span>
+      <span class="com">Job Portal</span>
     </div>
     <div class="profile" style="text-align:center;">
       <!-- <img src="https://via.placeholder.com/50" alt="User Profile"> -->

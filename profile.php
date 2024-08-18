@@ -23,7 +23,11 @@ require './conn.php';
                 <div class="card">
                     <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Profile Image">
                     <div class="card-body text-center">
-                        <?php if (isset($_SESSION['name'])) { ?>
+                        <?php 
+                        if (session_status() === PHP_SESSION_NONE) {
+                            session_start();
+                        }
+                        if (isset($_SESSION['name'])) { ?>
                             <h3 class="card-title"><?php echo $_SESSION['name']; ?></h3>
                         <?php } else { ?>
                             <h3 class="card-title">User Name</h3>
